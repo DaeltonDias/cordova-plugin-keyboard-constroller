@@ -6,7 +6,7 @@
 	</js-module>
 	<platform name="android">
 		<config-file parent="/*" target="res/xml/config.xml">
-			<feature name="window.KeyboardConstroller">
+			<feature name="KeyboardConstroller">
 				<param name="android-package" value="cordova.plugin.keyboard.controller.KeyboardConstroller" />
 			</feature>
 		</config-file>
