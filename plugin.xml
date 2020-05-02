@@ -2,7 +2,7 @@
 <plugin id="cordova-plugin-keyboard-controller" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
 	<name>KeyboardConstroller</name>
 	<js-module name="KeyboardConstroller" src="www/KeyboardConstroller.js">
-		<clobbers target="KeyboardConstroller" />
+		<clobbers target="cordova.plugins" />
 	</js-module>
 	<platform name="android">
 		<config-file parent="/*" target="res/xml/config.xml">
@@ -11,6 +11,6 @@
 			</feature>
 		</config-file>
 		<config-file parent="/*" target="AndroidManifest.xml"></config-file>
-		<source-file src="src/android/KeyboardConstroller.java" target-dir="src/cordova-plugin-keyboard-controller/KeyboardConstroller" />
+		<source-file src="src/android/KeyboardConstroller.java" target-dir="src/cordova/plugin/keyboard/controller/KeyboardConstroller" />
 	</platform>
 </plugin>
